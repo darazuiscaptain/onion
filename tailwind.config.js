@@ -5,12 +5,12 @@ module.exports = {
     themes: [
       {
         light: {
-          "primary": "#6419E6",
-          "secondary": "#D926A9",
-          "accent": "#1FB2A6",
-          "neutral": "#191D24",
-          "base-100": "#2A303C",
-          "info": "#3ABFF8",
+          "primary": "#338afd",
+          "secondary": "#F000B8",
+          "accent": "#37CDBE",
+          "neutral": "#3D4451",
+          "base-100": "#FFFFFF",
+          "info": "#3A4256",
           "success": "#36D399",
           "warning": "#FBBD23",
           "error": "#F87272",
