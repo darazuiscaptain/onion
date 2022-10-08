@@ -5,22 +5,22 @@ import logo from '../Images/Red Onion Logo.png';
 
 const Navbar = () => {
     let Links = [
-        { name: "", link: "/review" },
-        { name: "", link: "/dashboard" },
-        { name: "", link: "/blogs" },
-        { name: "", link: "/about" },
+        { name: "", link: "" },
+        { name: "", link: "" },
+        { name: "", link: "" },
+        { name: "", link: "" },
     ];
     let [open, setOpen] = useState(false);
     return (
-        <div className='h-[15vh] sticky top-0 left-0 z-50 font-[Poppins] py-6 text-center lg:px-24 px-4'>
+        <div className='sticky top-0 left-0 z-50 font-[Poppins] py-6 text-center lg:px-24 px-4 bg-white'>
             <div className='flex items-center justify-between'>
                 <div className='cursor-pointer'>
                     <Link to="/"><img src={logo} alt="" /></Link>
                 </div>
-                <div onClick={() => setOpen(!open)} className='text-2xl absolute right-6 top-7 cursor-pointer lg:hidden'>
+                <div onClick={() => setOpen(!open)} className='text-2xl absolute right-6 top-8 cursor-pointer lg:hidden'>
                     <i className={`${open ? 'fa-solid fa-x' : 'fa-solid fa-bars'} text-gray-700`}></i>
                 </div>
-                <ul className={`lg:flex lg:items-center lg:pb-0 pb-8 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-7 transition-all duration-500 ease-in ${open ? 'top-16 opacity-100' : 'top-[-490px] opacity-0'} lg:opacity-100`}>
+                <ul className={`lg:flex lg:items-center lg:pb-0 pb-8 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-7 transition-all duration-500 ease-in bg-white ${open ? 'top-16 opacity-100' : 'top-[-490px] opacity-0'} lg:opacity-100`}>
                     {
                         Links.map(link => <li
                             className='px-4 text-xl lg:my-0 my-5 text-black'
@@ -46,7 +46,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <li className='px-4 text-black'><CustomLink to='/login'>Login</CustomLink></li>
-                    <li className="px-4"><Link to='/signUp' className='bg-red-500 text-white rounded-3xl py-2 px-6'>SignUp</Link></li>              
+                    <li className="px-4 lg:mt-0 mt-4"><Link to='/signUp' className='bg-red-500 text-white rounded-3xl py-2 px-6'>SignUp</Link></li>              
                 </ul>
             </div>
         </div>
