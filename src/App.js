@@ -20,11 +20,11 @@ function App() {
           <Route path='/home/dinner' element={<Dinner></Dinner>}></Route>
         </Route>
         <Route path='' element></Route>
+        <Route path='' element></Route>
+        <Route path='' element></Route>
+        <Route path='' element></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
-        <Route path='' element></Route>
-        <Route path='' element></Route>
-        <Route path='' element></Route>
       </Routes>
       <Footer></Footer>
     </div>
