@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Category from './Category';
 import Expect from './Expect';
 import Homepage from './Homepage';
 import Mainfood from './Mainfood';
@@ -10,6 +11,7 @@ const Home = () => {
         <div>
             <Homepage></Homepage>
             <Expect></Expect>
+            <Category></Category>
             <Mainfood></Mainfood>
             <Outlet></Outlet>
             <WhyChoose></WhyChoose>

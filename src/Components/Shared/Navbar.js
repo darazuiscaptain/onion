@@ -5,6 +5,7 @@ import logo from '../Images/Red Onion Logo.png';
 
 const Navbar = () => {
     let Links = [
+        { name: "Food", link: "/food" },
         { name: "Gallery", link: "/gallery" },
         { name: "Blog", link: "/blog" },
         { name: "About", link: "/about" },
