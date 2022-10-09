@@ -5,7 +5,11 @@ import logo from '../Images/Red Onion Logo.png';
 
 const Navbar = () => {
     let Links = [
-        // { name: "Home", link: "/home" },
+        { name: "Gallery", link: "/gallery" },
+        { name: "Blog", link: "/blog" },
+        { name: "About", link: "/about" },
+        { name: "Contact", link: "/contact" },
+        // { name: "Dashboard", link: "/dashboard" },
     ];
     let [open, setOpen] = useState(false);
     return (
@@ -18,13 +22,6 @@ const Navbar = () => {
                     <i className={`${open ? 'fa-solid fa-x' : 'fa-solid fa-bars'} text-gray-700`}></i>
                 </div>
                 <ul className={`lg:flex lg:items-center lg:pb-0 pb-8 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-7 transition-all duration-500 ease-in bg-white ${open ? 'top-16 opacity-100' : 'top-[-490px] opacity-0'} lg:opacity-100`}>
-                    {
-                        Links.map(link => <li
-                            className='px-4 text-xl lg:my-0 my-5 text-black'
-                            key={link.name}>
-                            <CustomLink to={link.link}>{link.name}</CustomLink>
-                        </li>)
-                    }
                     <div className="dropdown dropdown-end px-4">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">
                             <div className="indicator">
@@ -42,8 +39,15 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <li className='px-4 text-black'><Link to='/login'>Login</Link></li>
-                    <li className="px-4 lg:mt-0 mt-4"><Link to='/signUp' className='bg-red-500 text-white rounded-3xl py-2 px-6'>SignUp</Link></li>              
+
+                    {
+                        Links.map(link => <li
+                            className='px-4 lg:my-0 my-5 text-black'
+                            key={link.name}>
+                            <CustomLink to={link.link}>{link.name}</CustomLink>
+                        </li>)
+                    }
+                    <li className="px-4 lg:mt-0 mt-4"><Link to='/login' className='bg-red-500 text-white rounded-3xl py-2 px-6'>Login</Link></li>
                 </ul>
             </div>
         </div>

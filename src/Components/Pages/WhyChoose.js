@@ -21,7 +21,7 @@ const WhyChoose = () => {
                         </h2>
                         <div>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <button className='text-blue-600 font-bold'>See more <i class="fa-solid fa-circle-arrow-right text-xs text-green-600"></i></button>
+                            <button className='text-blue-600 font-bold'>See more <i className="fa-solid fa-circle-arrow-right text-xs text-green-600"></i></button>
                         </div>
                     </div>
                 </div>
@@ -30,13 +30,13 @@ const WhyChoose = () => {
                     <div className="card-body">
                         <h2 className="card-title">
                             <span className='bg-primary rounded-full p-2 text-white'>
-                                <i className="fa-solid fa-car"></i>
+                                <i className="fa-solid fa-bell"></i>
                             </span>
                             <div className="font-bold text-[17px]">A Good Auto Responder</div>
                         </h2>
                         <div>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <button className='text-blue-600 font-bold'>See more <i class="fa-solid fa-circle-arrow-right text-xs text-green-600"></i></button>
+                            <button className='text-blue-600 font-bold'>See more <i className="fa-solid fa-circle-arrow-right text-xs text-green-600"></i></button>
                         </div>
                     </div>
                 </div>
@@ -45,13 +45,13 @@ const WhyChoose = () => {
                     <div className="card-body">
                         <h2 className="card-title">
                             <span className='bg-primary rounded-full p-2 text-white'>
-                                <i className="fa-solid fa-car"></i>
+                                <i className="fa-solid fa-truck-moving"></i>
                             </span>
                             <div className="font-bold text-[17px]">Home delivery</div>
                         </h2>
                         <div>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <button className='text-blue-600 font-bold'>See more <i class="fa-solid fa-circle-arrow-right text-xs text-green-600"></i></button>
+                            <button className='text-blue-600 font-bold'>See more <i className="fa-solid fa-circle-arrow-right text-xs text-green-600"></i></button>
                         </div>
                     </div>
                 </div>
