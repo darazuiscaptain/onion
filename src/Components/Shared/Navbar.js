@@ -5,19 +5,16 @@ import logo from '../Images/Red Onion Logo.png';
 
 const Navbar = () => {
     let Links = [
-        { name: "", link: "" },
-        { name: "", link: "" },
-        { name: "", link: "" },
-        { name: "", link: "" },
+        // { name: "Home", link: "/home" },
     ];
     let [open, setOpen] = useState(false);
     return (
-        <div className='sticky top-0 left-0 z-50 font-[Poppins] py-6 text-center lg:px-24 px-4 bg-white'>
+        <div className='sticky top-0 left-0 z-50 font-[Poppins] py-4 text-center lg:px-24 px-4 bg-white'>
             <div className='flex items-center justify-between'>
                 <div className='cursor-pointer'>
-                    <Link to="/"><img src={logo} alt="" /></Link>
+                    <Link to="/home"><img src={logo} alt="" /></Link>
                 </div>
-                <div onClick={() => setOpen(!open)} className='text-2xl absolute right-6 top-8 cursor-pointer lg:hidden'>
+                <div onClick={() => setOpen(!open)} className='text-2xl absolute right-6 top-6 cursor-pointer lg:hidden'>
                     <i className={`${open ? 'fa-solid fa-x' : 'fa-solid fa-bars'} text-gray-700`}></i>
                 </div>
                 <ul className={`lg:flex lg:items-center lg:pb-0 pb-8 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-7 transition-all duration-500 ease-in bg-white ${open ? 'top-16 opacity-100' : 'top-[-490px] opacity-0'} lg:opacity-100`}>
@@ -35,7 +32,7 @@ const Navbar = () => {
                                 <span className="badge badge-sm indicator-item bg-red-500 text-white border-none">0</span>
                             </div>
                         </label>
-                        <div tabIndex={0} className="mt-5 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                        <div tabIndex={0} className="mt-4 card card-compact dropdown-content w-52 bg-base-100 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">0 Items</span>
                                 <span className="text-info">Subtotal: $999</span>
@@ -45,7 +42,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <li className='px-4 text-black'><CustomLink to='/login'>Login</CustomLink></li>
+                    <li className='px-4 text-black'><Link to='/login'>Login</Link></li>
                     <li className="px-4 lg:mt-0 mt-4"><Link to='/signUp' className='bg-red-500 text-white rounded-3xl py-2 px-6'>SignUp</Link></li>              
                 </ul>
             </div>
