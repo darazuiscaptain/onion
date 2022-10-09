@@ -6,6 +6,7 @@ import Home from './Components/Pages/Home';
 import Login from './Components/Pages/Login';
 import Lunch from './Components/Pages/Lunch';
 import SignUp from './Components/Pages/SignUp';
+import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='' element></Route>
         <Route path='' element></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
