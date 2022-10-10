@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Foods from './Components/Pages/Foods';
 import Home from './Components/Pages/Home';
 import Login from './Components/Pages/Login';
 import SignUp from './Components/Pages/SignUp';
@@ -12,7 +13,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='' element></Route>
+        <Route path='/food' element={<Foods></Foods>}></Route>
         <Route path='' element></Route>
         <Route path='' element></Route>
         <Route path='' element></Route>

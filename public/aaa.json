@@ -1,38 +1,42 @@
 [
     {
-        "image": "https://i.ibb.co/p10P65t/breakfast1.png",
-        "name": "Bagel and Cream Cheese",
-        "description": "Natural peanut butter blueberry cream cheese cream cheese spread roasted red pepper",
-        "price": 20
+      "image": "https://i.ibb.co/rZ8yV4n/Dishes1.jpg",
+      "name": "Saumon Gravlax",
+      "price": "19",
+      "discription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi veniam provident exercitationem quod atque? Incidunt, fugit. Libero dolorem modi ab similique nulla nobis, minima doloremque.",
+      "quantity": "1",
+      "chef": "Emma Newman",
+      "category": "Started",
+      "review": "5"
     },
     {
-        "image": "https://i.ibb.co/Ry6fJ7X/breakfast2.png",
-        "name": "Breakfast Sandwich",
-        "description": "English muffin black forest olive oil eggs mexican cheese",
-        "price": 30
+      "image": "https://i.ibb.co/28ZdYHY/Dishes2.jpg",
+      "name": "Stracciatella",
+      "price": "16",
+      "discription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi veniam provident exercitationem quod atque? Incidunt, fugit. Libero dolorem modi ab similique nulla nobis, minima doloremque.",
+      "quantity": "1",
+      "chef": "Paul Trueman",
+      "category": "Main Dishes",
+      "review": "5"
     },
     {
-        "image": "https://i.ibb.co/W6ngGHh/breakfast3.png",
-        "name": "Baked Chiken",
-        "description": "Skinless chicken breasts smoked paprika olive oil garlic",
-        "price": 27
+      "image": "https://i.ibb.co/8bMLWzz/Dishes3.jpg",
+      "name": "Croustillant de poisson",
+      "price": "34",
+      "discription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi veniam provident exercitationem quod atque? Incidunt, fugit. Libero dolorem modi ab similique nulla nobis, minima doloremque.",
+      "quantity": "1",
+      "chef": "Oscar Oldman",
+      "category": "Drinks",
+      "review": "4"
     },
     {
-        "image": "https://i.ibb.co/zbwhWN9/breakfast4.png",
-        "name": "Egg Benedict",
-        "description": "Canadian bacon english muffins rice vinegar lemon",
-        "price": 23
-    },
-    {
-        "image": "https://i.ibb.co/HHckYmZ/breakfast5.png",
-        "name": "Toast Croissant Fried Egg",
-        "description": "Croissant vanilla bean paste heavy cream powdered sugar",
-        "price": 28
-    },
-    {
-        "image": "https://i.ibb.co/yYYypJc/breakfast6.png",
-        "name": "Full Breakfast Friend Egg Toast",
-        "description": "Black pudding breakfast sausage beans irish bacon",
-        "price": 25
+      "image": "https://i.ibb.co/TK1LbTC/Dishes4.jpg",
+      "name": "Сasserole",
+      "price": "39",
+      "discription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi veniam provident exercitationem quod atque? Incidunt, fugit. Libero dolorem modi ab similique nulla nobis, minima doloremque.",
+      "quantity": "1",
+      "chef": "Emma Newman",
+      "category": "Dessert",
+      "review": "5"
     }
-]
+  ]
