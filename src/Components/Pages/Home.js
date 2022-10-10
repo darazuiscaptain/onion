@@ -1,9 +1,9 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 import Category from './Category';
+import Chef from './Chef';
 import Expect from './Expect';
 import Homepage from './Homepage';
-import Mainfood from './Mainfood';
+import Mobile from './Mobile';
 import WhyChoose from './WhyChoose';
 
 const Home = () => {
@@ -12,9 +12,9 @@ const Home = () => {
             <Homepage></Homepage>
             <Expect></Expect>
             <Category></Category>
-            <Mainfood></Mainfood>
-            <Outlet></Outlet>
+            <Chef></Chef>
             <WhyChoose></WhyChoose>
+            <Mobile></Mobile>
         </div>
     );
 };

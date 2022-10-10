@@ -7,7 +7,7 @@ const Homepage = () => {
         <div className='lg:h-[87vh] lg:px-24 px-4 grid lg:grid-cols-2 grid-cols-1 items-center'>
             <div className='lg:-order-none order-4 duration-500' >
                 <h5 className='text-xs text-primary font-bold'>sale up to 20% off</h5>
-                <h2 className='lg:text-7xl text-5xl animate__animated animate__bounce'>We do not cook, <br /> we create your <br /> emotions!</h2>
+                <h2 className='lg:text-7xl text-5xl animate__animated animate__fadeInLeft'>We do not cook, <br /> we create your <br /> emotions!</h2>
                 <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, corrupti harum reprehenderit nulla est dicta asperiores saepe sint, dolore consequuntur earum nisi nam nostrum officiis.</p>
                 <button className='bg-primary px-6 py-2 text-white rounded mt-4'>Shop Now</button>
             </div>
