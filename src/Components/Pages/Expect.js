@@ -3,12 +3,13 @@ import restaurant from '../Images/Expect.png';
 import one from '../Images/number/one.png'
 import two from '../Images/number/two.png'
 import three from '../Images/number/three.png'
+import '../CSS/Expect.css'
 
 const Expect = () => {
     return (
             <div className='bg-gray-100 lg:h-screen lg:px-24 px-4 grid lg:grid-cols-2 grid-cols-1 items-center py-6 lg:mt-0 mt-10'>
                 <div className='flex lg:justify-start justify-center'>
-                    <img className='lg:w-[450px] w-[300px]' src={restaurant} alt="" />
+                    <img className='lg:w-[450px] w-[300px] image-animation' src={restaurant} alt="" />
                 </div>
                 <div className='lg:mt-0 mt-10'>
                     <h1 className="text-5xl font-bold">We are doing more than you expect!!</h1>

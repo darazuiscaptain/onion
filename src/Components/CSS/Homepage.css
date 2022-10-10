@@ -1,0 +1,15 @@
+.img-animation{
+    animation: updown 4s linear infinite;
+}
+
+@keyframes updown {
+    0%{
+        transform: translateY(-25px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-25px);
+    }
+}

@@ -1,0 +1,15 @@
+.image-animation{
+    animation: rightToLeft 4s linear infinite;
+}
+
+@keyframes rightToLeft {
+    0%{
+        transform: translateX(30px);
+   }
+   50%{
+        transform: translateX(0px);
+   }
+   100%{
+        transform: translateX(30px);
+   }
+}
