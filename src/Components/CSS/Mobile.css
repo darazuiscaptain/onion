@@ -1,0 +1,15 @@
+.image-animate{
+    animation: leftToRight 4s linear infinite;
+}
+
+@keyframes leftToRight {
+    0%{
+        transform: translateX(-25px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-25px);
+    }
+}

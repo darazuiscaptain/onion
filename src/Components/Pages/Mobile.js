@@ -1,5 +1,6 @@
 import React from 'react';
 import mobile from '../Images/Mobile.png';
+import '../CSS/Mobile.css';
 
 const Mobile = () => {
     return (
