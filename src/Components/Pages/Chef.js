@@ -15,43 +15,43 @@ const Chef = () => {
 
             <div className='grid lg:grid-cols-4 grid-cols-1 gap-8 my-8'>
                 <div className='text-center bg-gray-100 pb-4 rounded'>
-                    <div>
-                        <img  className='lg:h-[300px] w-full' src={chef1} alt="Chef1" />
+                    <div className='zoom'>
+                        <img className='lg:h-[300px] w-full zoom-animation' src={chef1} alt="Chef1" />
                     </div>
                     <div>
                         <h1 className='text-xl font-bold mt-2'>Paul Trueman</h1>
                         <p className='text-gray-400 font-bold'>Head Chef</p>
-                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500"></i> <i className="fa-brands fa-instagram text-pink-500"></i> <i className="fa-brands fa-facebook-f text-blue-500"></i> <i className="fa-brands fa-youtube text-red-500"></i></p>
+                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-instagram text-pink-500 cursor-pointer"></i> <i className="fa-brands fa-facebook-f text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-youtube text-red-500 cursor-pointer"></i></p>
                     </div>
                 </div>
                 <div className='text-center bg-gray-100 pb-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img  className='lg:h-[300px] w-full' src={chef2} alt="Chef1" />
                     </div>
                     <div>
                         <h1 className='text-xl font-bold mt-2'>Emma Newman</h1>
                         <p className='text-gray-400 font-bold'>Assistant chef</p>
-                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500"></i> <i className="fa-brands fa-instagram text-pink-500"></i> <i className="fa-brands fa-facebook-f text-blue-500"></i> <i className="fa-brands fa-youtube text-red-500"></i></p>
+                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-instagram text-pink-500 cursor-pointer"></i> <i className="fa-brands fa-facebook-f text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-youtube text-red-500 cursor-pointer"></i></p>
                     </div>
                 </div>
                 <div className='text-center bg-gray-100 pb-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img className='lg:h-[300px] w-full' src={chef3} alt="Chef1" />
                     </div>
                     <div>
                         <h1 className='text-xl font-bold mt-2'>Oscar Oldman</h1>
                         <p className='text-gray-400 font-bold'>Chef</p>
-                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500"></i> <i className="fa-brands fa-instagram text-pink-500"></i> <i className="fa-brands fa-facebook-f text-blue-500"></i> <i className="fa-brands fa-youtube text-red-500"></i></p>
+                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-instagram text-pink-500 cursor-pointer"></i> <i className="fa-brands fa-facebook-f text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-youtube text-red-500 cursor-pointer"></i></p>
                     </div>
                 </div>
                 <div className='text-center bg-gray-100 pb-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img className='lg:h-[300px] w-full' src={chef4} alt="Chef1" />
                     </div>
                     <div>
                         <h1 className='text-xl font-bold mt-2'>Ed Freeman</h1>
                         <p className='text-gray-400 font-bold'>Assistant chef</p>
-                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500"></i> <i className="fa-brands fa-instagram text-pink-500"></i> <i className="fa-brands fa-facebook-f text-blue-500"></i> <i className="fa-brands fa-youtube text-red-500"></i></p>
+                        <p className='flex justify-center gap-x-4 mt-2'><i className="fa-brands fa-twitter text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-instagram text-pink-500 cursor-pointer"></i> <i className="fa-brands fa-facebook-f text-blue-500 cursor-pointer"></i> <i className="fa-brands fa-youtube text-red-500 cursor-pointer"></i></p>
                     </div>
                 </div>
             </div>
