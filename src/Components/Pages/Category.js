@@ -14,7 +14,7 @@ const Category = () => {
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 mt-8'>
                 <div className='flex gap-6 items-center  bg-gray-100 p-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img src={started} alt="" />
                     </div>
                     <div>
@@ -23,7 +23,7 @@ const Category = () => {
                     </div>
                 </div>
                 <div className='flex gap-6 items-center bg-gray-100 p-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img src={dishes} alt="" />
                     </div>
                     <div>
@@ -32,7 +32,7 @@ const Category = () => {
                     </div>
                 </div>
                 <div className='flex gap-6 items-center bg-gray-100 p-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img src={drinks} alt="" />
                     </div>
                     <div>
@@ -41,7 +41,7 @@ const Category = () => {
                     </div>
                 </div>
                 <div className='flex gap-6 items-center bg-gray-100 p-4 rounded'>
-                    <div>
+                    <div className='zoom'>
                         <img src={dessert} alt="" />
                     </div>
                     <div>
