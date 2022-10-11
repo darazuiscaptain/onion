@@ -13,7 +13,7 @@ const Foods = () => {
             <h1 className='text-4xl font-bold'>Most Popular Dishes</h1>
             <div className='flex justify-between items-center mt-4'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur <br /> autem saepe voluptates, veniam fugit officia!</p>
-                <button className='bg-primary w-[150px] h-[40px] rounded text-white'>Show All Menu</button>
+                <button className='btn-animation bg-primary w-[150px] h-[40px] rounded text-white'>Show All Menu</button>
             </div>
 
             <div className='grid lg:grid-cols-4 grid-cols-1 gap-4 py-6'>

@@ -9,7 +9,7 @@ const Homepage = () => {
                 <h5 className='text-xs text-primary font-bold'>sale up to 20% off</h5>
                 <h2 className='lg:text-7xl text-5xl animate__animated animate__fadeInLeft'>We do not cook, <br /> we create your <br /> emotions!</h2>
                 <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, corrupti harum reprehenderit nulla est dicta asperiores saepe sint, dolore consequuntur earum nisi nam nostrum officiis.</p>
-                <button className='bg-primary px-6 py-2 text-white rounded mt-4'>Shop Now</button>
+                <button className="btn-animation bg-primary px-6 py-2 text-white mt-4 rounded-md font-bold">Shop Now</button>
             </div>
             <div>
                 <div className='flex lg:justify-end justify-center'>  

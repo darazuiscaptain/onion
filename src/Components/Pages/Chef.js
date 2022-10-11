@@ -10,7 +10,7 @@ const Chef = () => {
             <h1 className='text-4xl font-bold'>They will cook for you!</h1>
             <div className='flex justify-between items-center'>
                 <p className='mt-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, <br /> temporibus accusamus optio facere libero ducimus?</p>
-                <button className='bg-primary w-[150px] h-[40px] rounded text-white'>More About Us</button>
+                <button className='btn-animation bg-primary w-[150px] h-[40px] rounded text-white'>More About Us</button>
             </div>
 
             <div className='grid lg:grid-cols-4 grid-cols-1 gap-8 my-8'>

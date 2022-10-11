@@ -9,8 +9,8 @@ const Food = ({ food }) => {
                 <h2 className="font-bold text-xl">{name}</h2>
                 <p>Price: <span className='bold'>${price}</span></p>
                 <div className="flex justify-between mt-2">
-                    <button className="bg-primary text-white px-4 rounded py-1">Details</button>
-                    <button className='bg-primary text-white px-4 rounded py-1'>Add To Cart</button>
+                    <button className="btn-animation bg-primary text-white px-4 rounded py-1">Details</button>
+                    <button className='btn-animation bg-primary text-white px-4 rounded py-1'>Add To Cart</button>
                 </div>
             </div>
         </div>

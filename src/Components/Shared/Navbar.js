@@ -33,9 +33,9 @@ const Navbar = () => {
                         <div tabIndex={0} className="mt-4 card card-compact dropdown-content w-52 bg-base-100 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">0 Items</span>
-                                <span className="text-info">Subtotal: $999</span>
+                                <span className="text-info">Subtotal: $0</span>
                                 <div className="card-actions flex justify-center">
-                                    <button className="bg-red-500 text-white font-bold px-6 py-2 rounded">View cart</button>
+                                    <button className="bg-red-500 btn-animation text-white font-bold px-6 py-2 rounded">View cart</button>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
                             <CustomLink to={link.link}>{link.name}</CustomLink>
                         </li>)
                     }
-                    <li className="px-4 lg:mt-0 mt-4"><Link to='/login' className='bg-red-500 text-white rounded-3xl py-2 px-6'>Login</Link></li>
+                    <li className="px-4 lg:mt-0 mt-4"><Link to='/login' className='bg-red-500 btn-animation text-white rounded-3xl py-2 px-6'>Login</Link></li>
                 </ul>
             </div>
         </div>

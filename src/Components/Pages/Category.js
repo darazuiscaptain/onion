@@ -10,7 +10,7 @@ const Category = () => {
             <h1 className='text-4xl font-bold'>What do you like today?</h1>
             <div className='flex justify-between items-center'>
                 <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Itaque perspiciatis, rerum doloremque quibusdam <br /> deleniti beatae.</p>
-                <button className='bg-primary w-[150px] h-[40px] rounded text-white'>Go All Food</button>
+                <button className='bg-primary w-[150px] h-[40px] rounded text-white btn-animation'>Go All Food</button>
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 mt-8'>
                 <div className='flex gap-6 items-center  bg-gray-100 p-4 rounded'>
