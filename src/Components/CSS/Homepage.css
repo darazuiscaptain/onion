@@ -1,3 +1,11 @@
+.bg-images{
+    background-image: url('../Images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+
 .img-animation{
     animation: updown 4s linear infinite;
 }

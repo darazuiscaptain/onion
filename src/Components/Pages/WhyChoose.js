@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import why1 from '../Images/why1.png';
 import why2 from '../Images/why2.png';
 import why3 from '../Images/why3.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const WhyChoose = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 900,
+        });
+      }, []);
     return (
         <div className='lg:px-24 px-4 mt-10'>
-            <h1 className='text-4xl font-bold'>Why You Choose Us!</h1>
-            <p className='mt-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quos fuga, <br />
+            <h1 className='text-4xl font-bold' data-aos="fade-right">Why You Choose Us!</h1>
+            <p className='mt-2' data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quos fuga, <br />
                 et ab eveniet culpa ullam commodi hic, quidem, quisquam laudantium suscipit.</p>
             <div className='grid lg:grid-cols-3 grid-cols-1 my-8 gap-6'>
-                <div className="card bg-base-100 shadow-md">
+                <div className="card bg-base-100 shadow-md" data-aos="fade-up-right">
                     <img src={why1} alt="Home Delivery" />
                     <div className="card-body">
                         <h2 className="card-title">
@@ -25,7 +33,7 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-md">
+                <div className="card bg-base-100 shadow-md" data-aos="flip-down">
                     <img src={why2} alt="Home Delivery" />
                     <div className="card-body">
                         <h2 className="card-title">
@@ -40,7 +48,7 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-md">
+                <div className="card bg-base-100 shadow-md" data-aos="fade-up-left">
                     <img src={why3} alt="Home Delivery" />
                     <div className="card-body">
                         <h2 className="card-title">

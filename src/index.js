@@ -11,9 +11,9 @@ const queryClient = new QueryClient()
 root.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
-      <React.StrictMode>
+      {/* <React.StrictMode> */}
         <App />
-      </React.StrictMode>
+      {/* </React.StrictMode> */}
     </BrowserRouter>
   </QueryClientProvider>
 );

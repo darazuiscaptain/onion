@@ -1,9 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CustomLink from './CustomLink';
 import logo from '../Images/Red Onion Logo.png';
+import { signOut } from 'firebase/auth';
+import auth from '../../firebase-confiq';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Navbar = () => {
+    const [user] = useAuthState(auth);
+    const logOut = () => {
+    signOut(auth);
+  }
+
+    const [cart, setCart] = useState([]);
+    useEffect(()=>{
+        fetch(`http://localhost:5000/addCart`)
+            .then(res => res.json())
+            .then(data => setCart(data))
+    }, [])
+
     let Links = [
         { name: "Food", link: "/food" },
         { name: "Gallery", link: "/gallery" },
@@ -23,11 +38,12 @@ const Navbar = () => {
                     <i className={`${open ? 'fa-solid fa-x' : 'fa-solid fa-bars'} text-gray-700`}></i>
                 </div>
                 <ul className={`lg:flex lg:items-center lg:pb-0 pb-8 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-7 transition-all duration-500 ease-in bg-white ${open ? 'top-16 opacity-100' : 'top-[-490px] opacity-0'} lg:opacity-100`}>
+                    
                     <div className="dropdown dropdown-end px-4">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">
                             <div className="indicator">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                                <span className="badge badge-sm indicator-item bg-red-500 text-white border-none">0</span>
+                                <span className="badge badge-sm indicator-item bg-red-500 text-white border-none">{cart.length}</span>
                             </div>
                         </label>
                         <div tabIndex={0} className="mt-4 card card-compact dropdown-content w-52 bg-base-100 shadow">
@@ -48,7 +64,12 @@ const Navbar = () => {
                             <CustomLink to={link.link}>{link.name}</CustomLink>
                         </li>)
                     }
-                    <li className="px-4 lg:mt-0 mt-4"><Link to='/login' className='bg-red-500 btn-animation text-white rounded-3xl py-2 px-6'>Login</Link></li>
+                    {
+                        user ? 
+                        <li className="px-4 lg:mt-0 mt-4"><button className='bg-red-500 btn-animation text-white rounded-3xl py-1 px-6' onClick={logOut}>SignOut</button></li>
+                        :
+                        <li className="px-4 lg:mt-0 mt-4"><Link to='/login' className='bg-red-500 btn-animation text-white rounded-3xl py-2 px-6'>Login</Link></li>
+                    }
                 </ul>
             </div>
         </div>

@@ -25,12 +25,12 @@ const FoodDetails = () => {
 
 
     return (
-        <div className='lg:px-24 px-4 mt-10'>
+        <div className='lg:px-24 px-4 mt-10 lg:my-0 my-10'>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 items-center'>
                 <div>
-                    <img className='rounded-lg' src={details.image} alt="Foods" />
+                    <img className='rounded-lg animate__animated animate__fadeInLeft' src={details.image} alt="Foods" />
                 </div>
-                <div>
+                <div className='animate__animated animate__fadeInRight'>
                     <div className='flex bg-gray-100 justify-between items-center p-8'>
                         <h1 className='text-2xl font-bold'>{details.name}</h1>
                         <p className='bg-primary w-[100px] btn-animation text-center text-white font-bold text-2xl rounded'>${details.price}</p>
